@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books API Frontend</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <h1>Books API</h1>
+
+        <div class="section">
+            <h2>All Books</h2>
+            <button onclick="getAllBooks()">Get All Books</button>
+            <ul id="books-list"></ul>
+        </div>
+
+        <div class="section">
+            <h2>Get Book by ID</h2>
+            <input type="number" id="get-book-id" placeholder="Enter book ID">
+            <button onclick="getBookById()">Get Book</button>
+            <div id="book-detail"></div>
+        </div>
+
+        <div class="section">
+            <h2>Add New Book</h2>
+            <input type="text" id="new-book-title" placeholder="Enter book title">
+            <input type="text" id="new-book-author" placeholder="Enter book author">
+            <button onclick="addBook()">Add Book</button>
+            <div id="add-book-response"></div>
+        </div>
+
+        <div class="section">
+            <h2>Update Book</h2>
+            <input type="number" id="update-book-id" placeholder="Enter book ID">
+            <input type="text" id="update-book-title" placeholder="Enter new title">
+            <input type="text" id="update-book-author" placeholder="Enter new author">
+            <button onclick="updateBook()">Update Book</button>
+            <div id="update-book-response"></div>
+        </div>
+
+        <div class="section">
+            <h2>Delete Book</h2>
+            <input type="number" id="delete-book-id" placeholder="Enter book ID">
+            <button onclick="deleteBook()">Delete Book</button>
+            <div id="delete-book-response"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
