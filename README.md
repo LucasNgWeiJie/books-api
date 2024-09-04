@@ -1,8 +1,7 @@
-# Simple webapp to test out book api##
+# Simple webapp to test out api calls
 
-If you dont have a package.json file beforehand, use
+# If you dont have a package.json file beforehand, use
 npm init -y
 
-then, 
 npm install express
 
